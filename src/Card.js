@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Card.css';
 
 import CardTeacher from './CardTeacher';
@@ -25,7 +25,6 @@ const Card = ({ data: { title, desc, like, students, price, teacher, video } }) 
                 <div className="card__stat">
                     <label>老師</label>
                     <CardTeacher data={teacher} />
-                    <div>{teacher.name}</div>
                 </div>
             </div>
             <video className="card__video" poster={video.poster} src={video.source} controls />
