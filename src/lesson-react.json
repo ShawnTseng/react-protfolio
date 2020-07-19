@@ -6,11 +6,6 @@
     "price": 3200,
     "teacher": {
       "name": "Mr. Yao",
-      "link": "https://google.com/",
-      "image": "https://avatars0.githubusercontent.com/u/27264820?s=460&u=cd0bfb10e49076ce7582c5eceb827c0c9c054d80&v=4"
-    },
-    "video": {
-      "poster": "",
-      "source": ""
+      "link": "https://shawntseng.github.io/protfolio/"
     }
   }

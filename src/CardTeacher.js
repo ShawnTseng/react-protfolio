@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Card.css';
 
-const CardTeacher = ({ data: { name, link, image } }) => {
-    return (
-        // eslint-disable-next-line
-        <a herf={link}>
-            <img src={image} alt="" className="card__avatar" />
-            <span>{name}</span>
-        </a>
-    );
+class CardTeacher extends Component {
+    render() {
+        const { name, link } = this.props.data;
+
+        return (
+            // eslint-disable-next-line
+            <a herf={link}>
+                <span>{name}</span>
+            </a>
+        );
+    }
 }
 
 export default CardTeacher;

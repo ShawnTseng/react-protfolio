@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Card.css';
 
 import CardTeacher from './CardTeacher';
 import CardDesc from './CardDesc';
 
-const Card = ({ data: { title, desc, like, students, price, teacher, video } }) => {
-    return (
-        <div className="card">
+class Card extends Component {
+    render() {
+        const { title, desc, like, students, price, teacher } = this.props.data;
+
+        return <div className="card">
             <h2 className="card__title">{title}</h2>
             <CardDesc>{desc}</CardDesc>
             <div className="card__stats">
@@ -27,10 +29,8 @@ const Card = ({ data: { title, desc, like, students, price, teacher, video } }) 
                     <CardTeacher data={teacher} />
                 </div>
             </div>
-            <video className="card__video" poster={video.poster} src={video.source} controls />
         </div>
-    );
-
+    }
 }
 
 export default Card;

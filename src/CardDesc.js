@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
-class CardDesc extends PureComponent {
+class CardDesc extends Component {
     state = {
         isOpen: false
     }
