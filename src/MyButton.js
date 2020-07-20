@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-import style from './MyButton.module.css';
+import styled from 'styled-components';
+
+const Button = styled.button`
+background: #cde;
+border-radius: 20px;
+font-size: 2em;
+width: 250px;
+text-align: center;
+padding: 0.5em 0;
+margin-right: 0.5em;
+`
 
 class MyButton extends Component {
     render() {
         return (
-            <button className={style.btn}>{this.props.children}</button>
+            <Button>{this.props.children}</Button>
         );
     }
 }
