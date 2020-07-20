@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './MyButton.css';
+import style from './MyButton.module.css';
 
 class MyButton extends Component {
     render() {
         return (
-            <button className="btn">{this.props.children}</button>
+            <button className={style.btn}>{this.props.children}</button>
         );
     }
 }
