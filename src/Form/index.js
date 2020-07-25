@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import InputNumber from './InputNumber';
+import Select from './Select';
 
 class Form extends Component {
     render() {
@@ -12,6 +13,8 @@ class Form extends Component {
                 <Textarea />
                 <hr />
                 <InputNumber />
+                <hr />
+                <Select />
             </div>
         );
     }
