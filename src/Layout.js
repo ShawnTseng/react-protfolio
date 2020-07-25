@@ -3,13 +3,18 @@ import Navbar from './Navbar';
 import Card from './Card';
 import MyButton from './MyButton';
 import YourButton from './YourButton';
+import FileTree from './FileTree/index';
 
 import lesson from './lesson-react.json';
 
 class Layout extends Component {
     state = {
         tabIndex: 0,
-        tabList: [{ label: 'Card', id: 0 }, { label: 'Styled Component Try', id: 1 }]
+        tabList: [
+            { label: 'Card', id: 0 },
+            { label: 'Styled Component Try', id: 1 },
+            { label: 'File Tree', id: 2 }
+        ]
     };
 
     changeTab = tabId => {
@@ -30,6 +35,7 @@ class Layout extends Component {
                         <YourButton>World</YourButton>
                     </>
                 }
+                {tabIndex === 2 && <FileTree />}
             </div>
         );
     }
