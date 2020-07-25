@@ -4,6 +4,7 @@ import Card from './../Card/index';
 import MyButton from './../StyledComponent/MyButton';
 import YourButton from './../StyledComponent/YourButton';
 import FileTree from './../FileTree/index';
+import Form from './../Form/index';
 
 import lesson from './../lesson-react.json';
 
@@ -13,7 +14,8 @@ class Layout extends Component {
         tabList: [
             { label: 'Card', id: 0 },
             { label: 'Styled Component Try', id: 1 },
-            { label: 'File Tree', id: 2 }
+            { label: 'File Tree', id: 2 },
+            { label: 'My Form', id: 3 }
         ]
     };
 
@@ -36,6 +38,7 @@ class Layout extends Component {
                     </>
                 }
                 {tabIndex === 2 && <FileTree />}
+                {tabIndex === 3 && <Form />}
             </div>
         );
     }
