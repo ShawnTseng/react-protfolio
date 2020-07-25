@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.css';
 
 class FileNode extends Component {
     state = {
@@ -16,7 +17,7 @@ class FileNode extends Component {
         if (files) {
             return (
                 <div>
-                    <div onClick={this.toggleOpen}>{name}</div>
+                    <div className={`folder ${open ? 'open' : ''}`} onClick={this.toggleOpen}>{name}</div>
                     {!open ? null :
                         (<ul>
                             {files.map((file) => <FileNode {...file} />)}
