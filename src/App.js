@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Layout from './Layout';
 import Card from './Card';
 import MyButton from './MyButton';
 import YourButton from './YourButton';
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Layout />
       <Card data={lesson} />
       <hr />
       <MyButton>Hello</MyButton>
