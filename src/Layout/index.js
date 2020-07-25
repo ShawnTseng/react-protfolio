@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import Card from './Card';
-import MyButton from './MyButton';
-import YourButton from './YourButton';
-import FileTree from './FileTree/index';
+import Card from './../Card/index';
+import MyButton from './../StyledComponent/MyButton';
+import YourButton from './../StyledComponent/YourButton';
+import FileTree from './../FileTree/index';
 
-import lesson from './lesson-react.json';
+import lesson from './../lesson-react.json';
 
 class Layout extends Component {
     state = {
