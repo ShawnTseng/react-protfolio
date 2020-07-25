@@ -15,7 +15,7 @@ class Input extends Component {
         return (
             <div>
                 <h3>{this.state.textareaValue}</h3>
-                <textarea textValue={this.state.textareaValue} onChange={this.onChangeTextarea} />
+                <textarea value={this.state.textareaValue} onChange={this.onChangeTextarea} />
             </div>
         );
     }

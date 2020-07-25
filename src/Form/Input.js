@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Input extends Component {
     state = {
         textValue: 'Hi~~~',
-        textareaValue: 'multi!!!'
     }
 
     onChange = e => {
@@ -15,7 +14,7 @@ class Input extends Component {
         return (
             <div>
                 <h3>{this.state.textValue}</h3>
-                <input type="text" textValue={this.state.textValue} onChange={this.onChange} />
+                <input type="text" value={this.state.textValue} onChange={this.onChange} />
             </div>
         );
     }

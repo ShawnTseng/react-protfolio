@@ -15,7 +15,7 @@ class InputNumber extends Component {
         return (
             <div>
                 <h3>{this.state.numberValue}</h3>
-                <input type="number" numberValue={this.state.numberValue} onChange={this.onChange} />
+                <input type="number" value={this.state.numberValue} onChange={this.onChange} />
             </div>
         );
     }
