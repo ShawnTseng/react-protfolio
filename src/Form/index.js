@@ -4,6 +4,7 @@ import Textarea from './Textarea';
 import InputNumber from './InputNumber';
 import Select from './Select';
 import Radio from './Radio';
+import Checkbox from './Checkbox';
 
 class Form extends Component {
     render() {
@@ -18,6 +19,8 @@ class Form extends Component {
                 <Select />
                 <hr />
                 <Radio />
+                <hr />
+                <Checkbox />
             </div>
         );
     }
